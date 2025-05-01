@@ -1,0 +1,22 @@
+menu "ESP32-HRNG Configuration"
+
+    config LED_GPIO
+        int "Heartbeat LED GPIO number"
+        range 0 39
+        default 12
+        help
+            Select which GPIO pin is used to drive the network‑heartbeat LED.
+            This value will be available in code as CONFIG_LED_GPIO.
+
+    config DEBUG
+        int "Debug Level"
+        range 0 3
+        default 0
+        help
+            Set debug level for logging.
+            0: No debug output
+            1: Error messages
+            2: Warning messages
+            3: Info messages
+        
+endmenu
