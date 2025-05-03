@@ -100,7 +100,7 @@ python tests/benchmarks/esp32_random_stream.py --size 1G > rng.bin
 dieharder -a -g 201 -f rng.bin
 ```
 
-Here's the result for [csprng](tests/benchmarks/README.md) and [esp_random](tests/benchmarks/esp_random_1g.md). It's recommended to use csprng for better quality random numbers.
+Here are the results for [ESP32-WROOM-32UE](tests/benchmarks/ESP32-WROOM-32UE.md) and [ESP32-C3](tests/benchmarks/ESP32-C3.md). For better quality random numbers, it's recommended to use an original ESP32 via CSPRNG.
 
 ## Troubleshooting
 
